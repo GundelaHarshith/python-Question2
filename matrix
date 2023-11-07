@@ -1,0 +1,21 @@
+def transpose(mat):
+    mat_trans = []
+    Rnum = len(mat)
+    Colnum = len(mat[0])
+ 
+    for i in range(Colnum):  # A for loop for row entries
+      L = []
+      for j in range(Rnum):
+        L.append(mat[j][i])
+      mat_trans.append(L)
+      
+    return mat_trans
+
+    """
+    compute the transpose of the matrix
+
+    Argument:
+        mat: list of lists
+    Return:
+        mat_trans: list of lists
+    """
